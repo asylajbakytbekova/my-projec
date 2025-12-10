@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Corner — Меню</title>
+    <link rel="stylesheet" href= "/project/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container header-container">
+        <h1 class="logo">Cozy Corner</h1>
+        <nav>
+            <a href= "/project/index.html">Басты бет</a>
+            <a href="menu.html">Меню</a>
+            <a href="/pages/about.html">Біз туралы</a>
+            <a href="/pages/booking.html">Бронировка</a>
+        </nav>
+    </div>
+</header>
+
+<section class="menu-section">
+    <div class="container">
+        <h2>Біздің кофе</h2>
+
+        <div class="menu-grid">
+
+           <!-- menu.html ішіндегі әрбір menu-item ішінде -->
+<div class="menu-item" onclick="openOrderModal('Латте')">
+    <img src="/img/cornerr.jpg" alt="Latte">
+    <div class="menu-info">
+        <h3>Латте</h3>
+        <p>Нәзік сүт көбікпен жасалған классикалық кофе.</p>
+    </div>
+</div>
+
+
+<div id="orderModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeOrderModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p>Бұл кофені тапсырыс бергіңіз келе ме?</p>
+        <button onclick="placeOrder()">Тапсырыс беру</button>
+    </div>
+</div>
+
+<div class="menu-item" onclick="openOrderModal('Эспрессо')">
+    <img src="/img/corneer.jpg" alt="Эспрессо">
+    <div class="menu-info">
+        <h3>Эспрессо</h3>
+        <p>Қатты, қою, нағыз энергия.</p>
+    </div>
+</div>
+
+
+<div id="orderModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeOrderModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p>Бұл кофені тапсырыс бергіңіз келе ме?</p>
+        <button onclick="placeOrder()">Тапсырыс беру</button>
+    </div>
+</div>
+<div class="menu-item" onclick="openOrderModal('Раф')">
+       <img src="/img/coorner.jpg" alt="Raf">
+    <div class="menu-info">
+        <h3>Раф</h3>
+                    <p>Ванильді, кремді және өте жұмсақ дәм.</p>
+    </div>
+</div>
+
+
+<div id="orderModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeOrderModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p>Бұл кофені тапсырыс бергіңіз келе ме?</p>
+        <button onclick="placeOrder()">Тапсырыс беру</button>
+    </div>
+</div>
+<div class="menu-item" onclick="openOrderModal('Капучино')">
+    <img src="/img/corrner.jpg" alt="Cappuccino">
+    <div class="menu-info">
+         <h3>Капучино</h3>
+                    <p>Қалың сүт көбігі мен бай дәм үйлесімі.</p>
+    </div>
+</div>
+
+
+<div id="orderModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeOrderModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p>Бұл кофені тапсырыс бергіңіз келе ме?</p>
+        <button onclick="placeOrder()">Тапсырыс беру</button>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-flex">
+        <h3>Cozy Corner</h3>
+        <p>© 2025. Барлық құқықтар қорғалған.</p>
+    </div>
+</footer>
+<script src="/project/script.js"></script>
+</body>
+</html>

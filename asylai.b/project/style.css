@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fde9f1;
+    color: #5b5959;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background: #fff;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 2px solid #f3c1d8;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 26px;
+    color: #d06a92;
+}
+
+nav a {
+    margin-left: 25px;
+    font-size: 18px;
+    color: #726e6e;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d06a92;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff0f5;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Дұрыс домалақ жасау үшін */
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #b83b5e; /* қалауыңыз бойынша рамка */
+}
+
+
+.btn {
+    background: #d06a92;
+    padding: 12px 22px;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #b4577e;
+}
+
+.menu-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.menu-item {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-8px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.menu-info {
+    padding: 15px;
+}
+
+.menu-info h3 {
+    color: #d06a92;
+    font-size: 20px;
+}
+
+.menu-info p {
+    font-size: 15px;
+}
+/* style.css ішіне қосу */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+
+
+.about-page .about-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-page img {
+    width: 45%;
+    border-radius: 14px;
+}
+
+.about-page h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contacts {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.contacts h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.footer-flex {
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer {
+    margin-top: 40px;
+    background: #fff;
+    border-top: 2px solid #f3c1d8;
+}
+
+.booking h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.tables-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.table {
+    background: #fff;
+    width: 130px;
+    height: 130px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    border: 2px solid #d06a92;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.table:hover {
+    background: #ffe1ee;
+}
+
+.hidden {
+    display: none;
+}
+
+#bookingForm {
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #f3c1d8;
+}
+
+#bookingForm h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+#bookingForm input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #d7d7d7;
+}
+
+/* Адаптив */
+@media (max-width: 900px) {
+    .about-page .about-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-page img {
+        width: 80%;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding-left: 25px;
+        height: 55vh;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tables-grid {
+        grid-template-columns: repeat(2, 120px);
+    }
+
+    .table {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 400px) {
+    .tables-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .table {
+        width: 140px;
+        height: 140px;
+        margin: auto;
+    }
+}
